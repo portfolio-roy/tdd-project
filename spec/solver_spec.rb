@@ -19,4 +19,19 @@ describe Solver do
             expect(solver.reverse('roy')).to eq('yor')
         end
     end
+
+    describe "#fizzbuzz" do
+        it "should return number if number is not divisble by 3 or 5" do
+            expect(solver.fizzbuzz(1)).to eq(1)
+        end
+        it "should return fizz if number is divisible by 3" do
+            expect(solver.fizzbuzz(9)).to eq('fizz')
+        end
+        it "should return buzz if number is divisible by 5" do
+            expect(solver.fizzbuzz(20)).to eq('buzz')
+        end
+        it "should return fizzbuzz if number is divisible by 3 and 5" do
+            expect(solver.fizzbuzz(15)).to eq('fizzbuzz')
+        end
+    end
 end
