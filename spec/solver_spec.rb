@@ -15,4 +15,10 @@ describe Solver do
             expect(solver.factorial(5)).to eq(120)
         end
     end
+
+    describe '#reverse' do
+        it 'returns the reversed version of a given string' do
+            expect(solver.reverse('roy')).to eq('yor')
+        end
+    end
 end
