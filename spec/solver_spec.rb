@@ -6,7 +6,7 @@ describe Solver do
     solver = Solver.new
     describe "#factorial" do
         it "should return error when number is negative" do
-            expect(solver.factorial(-3)).to raise_error(Exception)
+            expect { (solver.factorial(-3)) }.to raise_error(Exception)
         end
         it "should return 1 when given 0" do
             expect(solver.factorial(0)).to eq(1)
