@@ -1,8 +1,6 @@
 require './solver'
 
 describe Solver do
-    # initialize an instance of Solver class
-    # write tests for the factorial method
     solver = Solver.new
     describe "#factorial" do
         it "should return error when number is negative" do

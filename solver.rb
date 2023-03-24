@@ -1,8 +1,4 @@
 class Solver
-    # def initialize
-    #     puts 'Solver initialized'
-    # end
-
     def factorial(number)
         if number.negative?
             raise Exception
@@ -16,5 +12,9 @@ class Solver
             ans
         end
 
+    end
+
+    def reverse(string)
+        string.reverse
     end
 end
